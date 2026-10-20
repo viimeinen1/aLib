@@ -1,0 +1,4 @@
+name: "aLib"
+version: "0.1.0"
+main: "io.github.viimeinen1.alib.plugin.aLib"
+api-version: "26.2"
