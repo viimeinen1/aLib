@@ -12,10 +12,17 @@ repositories {
     name = "papermc"
     url = uri("https://repo.papermc.io/repository/maven-public/")
   }
+  maven {
+    url = uri("https://maven.enginehub.org/repo/")
+  }
 }
 
 dependencies {
   compileOnly("io.papermc.paper:paper-api:26.2.build.+")
+  compileOnly("com.sk89q.worldguard:worldguard-bukkit:7.0.17") {
+    exclude("com.google.guava")
+    exclude("com.google.code.gson")
+  }
 }
 
 java {
